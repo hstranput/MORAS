@@ -1,0 +1,14 @@
+CHIP MultHalf{
+    IN a[16], b[16];
+    OUT out[16];
+
+    PARTS:
+    Xor(a = a[15], b = b[15], out = out[15]); //za predznak 1 bit
+
+    Add16(a[10..14] = a[10..14], a[0..9] = false, a[15] = false, b[10..14] = b[10..14], b[15] = false, b[0..9] = false , out = out1); //zbrajamo 5 bitova za eksponent ostalim bitovima vrijednost stavljamo na 0
+    Add16(a = out1, b[0..9] = false, b[10] = true, b[11..13] = false, b[14] = true, b[15] = false, out[10..14] = out[10..14], out[15] = out2, out[0..9] = out3); // buduci da smo zbrojili 2 eksponenta moramo oduzeti 15, tj. tome zbroju dodati dvojni komplement od 15 (10001)
+
+    Mult(a[0..9] = a[0..9], b[0..9] = b[0..9], a[10..15] = false, b[10..15] = false, out[6..15] = out[0..9], out[0..5] = out4); //preostalih 10 bitova mnozimo (mantise)
+
+    
+}
