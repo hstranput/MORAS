@@ -1,0 +1,25 @@
+sp
+call main.Main 0
+ep
+
+function Main 0
+    push constant 42
+    push constant 25
+    push constant 12
+    call mid.Mid 3
+    pop static 0
+    push constant 8
+    call fibonacci.fibonacci 1
+    pop static 1
+    push constant 42
+    push constant 19 
+    call divmod.Div 2
+    pop static 2
+    push constant 42
+    push constant 19
+    call divmod.Mod 2
+    pop static 3
+	return
+
+label END
+goto END
