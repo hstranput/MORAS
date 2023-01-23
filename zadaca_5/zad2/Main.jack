@@ -1,0 +1,61 @@
+class Main {
+    function void main() {
+	var Vint vecA, vecB;
+        var int i;
+        let vecA = Vint.new(3);
+        let vecB = Vint.new(2);
+        
+        do vecA.set(-1,12);
+        do vecA.set(0,32);
+        do vecA.set(1,61);
+        do vecA.set(2,11);
+        do vecB.set(0,16);
+        do vecB.set(1,14);
+	do vecB.set(2,11);
+        do vecB.set(3,99);
+        
+        do Output.printInt(vecA.len());
+        do Output.println();
+		
+        do Output.printInt(vecB.get(5));
+        do Output.println();
+        do Output.printInt(vecA.get(0));
+        do Output.println();
+        
+        do vecB.resize(3);
+        
+        while (i < vecA.len()) {
+            do Output.printInt(vecA.get(i));
+            do Output.printString(" ");
+            let i = i + 1;
+        }
+        
+        let i = 0;
+        do Output.println();
+        while (i < vecB.len()) {
+            do Output.printInt(vecB.get(i));
+            do Output.printString(" ");
+            let i = i + 1;
+        }
+        
+        do Output.println();
+        
+	if (Vint.is_eq(vecA, vecB) = true) {
+            do Output.printString("The two vectors are equal.");
+            do Output.println();
+        }
+		
+        if (Vint.is_eq(vecA, vecB) = false) {
+            do Output.printString("The two vectors are not equal");
+            do Output.println();
+        }
+		
+	if (Vint.elems(vecA, vecB) = true) {
+            do Output.printString("The two vectors are equal");
+            do Output.println();
+        }
+
+        return;
+    }
+
+}
