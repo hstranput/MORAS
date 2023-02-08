@@ -1,0 +1,32 @@
+class Square
+{
+	/*
+	static int i, j;
+	// field char c; */
+	static string s;
+	/*
+	field boolean u, v, w, x, y, z;
+    */
+
+    method void test(int x, int y, char ch)
+	{
+        var int a, b, c, d;
+		let i = 1000;
+		let k = -100;
+		//let k = 100000;
+		//let l = 1a220;
+		let A[2] = 25 - a;
+        let A[d-b] = c - (4 + a);
+        let A[a + (d*2)] = 1;
+        
+		do Output.printString("maune");
+        
+        //return a;
+        //return A[3];
+        //return;
+		//return (a - 13);
+        //return (13 - b);
+        //return (c - d);
+        return (a + (b * c));
+	}
+}

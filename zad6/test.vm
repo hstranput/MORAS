@@ -1,0 +1,215 @@
+<Test.xml>
+<class>
+  <keyword> class </keyword>
+  <identifier> Square </identifier>
+  <symbol> { </symbol>
+  <classVarDec>
+    <keyword> static </keyword>
+    <identifier> string </identifier>
+    <identifier> s </identifier>
+    <symbol> ; </symbol>
+  </classVarDec>
+  <subroutineDec>
+    <keyword> method </keyword>
+    <keyword> void </keyword>
+    <identifier> test </identifier>
+    <symbol> ( </symbol>
+    <keyword> int </keyword>
+    <identifier> x </identifier>
+    <symbol> , </symbol>
+    <keyword> int </keyword>
+    <identifier> y </identifier>
+    <symbol> , </symbol>
+    <keyword> char </keyword>
+    <identifier> ch </identifier>
+    <symbol> ) </symbol>
+    <subroutineBody>
+      <symbol> { </symbol>
+      <localVarDec>
+        <keyword> var </keyword>
+        <keyword> int </keyword>
+        <identifier> a </identifier>
+        <symbol> , </symbol>
+        <identifier> b </identifier>
+        <symbol> , </symbol>
+        <identifier> c </identifier>
+        <symbol> , </symbol>
+        <identifier> d </identifier>
+        <symbol> ; </symbol>
+      </localVarDec>
+      <classStatments>
+        <letStatement>
+          <keyword> let </keyword>
+          <term>
+            <indentifier> i </indentifier>
+          </term>
+          <symbol> = </symbol>
+          <expression>
+            <term>
+              <integerConstant> 1000 </integerConstant>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </letStatement>
+        <letStatement>
+          <keyword> let </keyword>
+          <term>
+            <indentifier> k </indentifier>
+          </term>
+          <symbol> = </symbol>
+          <expression>
+            <term>
+              <symbol> - </symbol>
+              <term>
+                <integerConstant> 100 </integerConstant>
+              </term>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </letStatement>
+        <letStatement>
+          <keyword> let </keyword>
+          <term>
+            <indentifier> A </indentifier>
+            <symbol> [ </symbol>
+            <expression>
+              <term>
+                <integerConstant> 2 </integerConstant>
+              </term>
+            </expression>
+            <symbol> ] </symbol>
+          </term>
+          <symbol> = </symbol>
+          <expression>
+            <term>
+              <integerConstant> 25 </integerConstant>
+            </term>
+            <symbol> - </symbol>
+            <term>
+              <indentifier> a </indentifier>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </letStatement>
+        <letStatement>
+          <keyword> let </keyword>
+          <term>
+            <indentifier> A </indentifier>
+            <symbol> [ </symbol>
+            <expression>
+              <term>
+                <indentifier> d </indentifier>
+              </term>
+              <symbol> - </symbol>
+              <term>
+                <indentifier> b </indentifier>
+              </term>
+            </expression>
+            <symbol> ] </symbol>
+          </term>
+          <symbol> = </symbol>
+          <expression>
+            <term>
+              <indentifier> c </indentifier>
+            </term>
+            <symbol> - </symbol>
+            <term>
+              <symbol> ( </symbol>
+              <expression>
+                <term>
+                  <integerConstant> 4 </integerConstant>
+                </term>
+                <symbol> + </symbol>
+                <term>
+                  <indentifier> a </indentifier>
+                </term>
+              </expression>
+              <symbol> ) </symbol>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </letStatement>
+        <letStatement>
+          <keyword> let </keyword>
+          <term>
+            <indentifier> A </indentifier>
+            <symbol> [ </symbol>
+            <expression>
+              <term>
+                <indentifier> a </indentifier>
+              </term>
+              <symbol> + </symbol>
+              <term>
+                <symbol> ( </symbol>
+                <expression>
+                  <term>
+                    <indentifier> d </indentifier>
+                  </term>
+                  <symbol> * </symbol>
+                  <term>
+                    <integerConstant> 2 </integerConstant>
+                  </term>
+                </expression>
+                <symbol> ) </symbol>
+              </term>
+            </expression>
+            <symbol> ] </symbol>
+          </term>
+          <symbol> = </symbol>
+          <expression>
+            <term>
+              <integerConstant> 1 </integerConstant>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </letStatement>
+        <doStatement>
+          <keyword> do </keyword>
+          <identifier> Output </identifier>
+          <symbol> . </symbol>
+          <identifier> printString </identifier>
+          <symbol> ( </symbol>
+          <expressionList>
+            <expression>
+              <term>
+                <stringConstant> test string </stringConstant>
+              </term>
+            </expression>
+          </expressionList>
+          <symbol> ) </symbol>
+          <symbol> ; </symbol>
+        </doStatement>
+        <returnStatement>
+          <keyword> return </keyword>
+          <term>
+            <symbol> ( </symbol>
+            <expression>
+              <term>
+                <indentifier> a </indentifier>
+              </term>
+              <symbol> + </symbol>
+              <term>
+                <symbol> ( </symbol>
+                <expression>
+                  <term>
+                    <indentifier> b </indentifier>
+                  </term>
+                  <symbol> * </symbol>
+                  <term>
+                    <indentifier> c </indentifier>
+                  </term>
+                </expression>
+                <symbol> ) </symbol>
+              </term>
+            </expression>
+            <symbol> ) </symbol>
+          </term>
+          <symbol> ; </symbol>
+        </returnStatement>
+      </classStatments>
+      <symbol> } </symbol>
+    </subroutineBody>
+  </subroutineDec>
+  <symbol> } </symbol>
+</class>
+</Test.xml>
